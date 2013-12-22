@@ -5,9 +5,6 @@ class PagesController < ApplicationController
   def discover
   end
 
-  def terms_privacy
-  end
-
   def about
   end
 end

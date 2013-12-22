@@ -9,7 +9,7 @@
 </head>
 <body>
 	<% flash.each do |name, msg| %>
-		<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+		<%= content_tag(:div, msg, class: "alert alert-info") %>
 	<% end %>
 <%= render 'layouts/header' %>
 <div class="container">
