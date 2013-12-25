@@ -10,14 +10,14 @@ class BooksController < ApplicationController
   end
 
   def new
-    @book = current_user.pins.build
+    @book = current_user.books.build
   end
 
    def edit
   end
 
    def create
-    @book = current_user.pins.build(book_params)
+    @book = current_user.books.build(book_params)
 
       if @book.save
        redirect_to @book, notice: 'Book was successfully created.' 
@@ -46,7 +46,6 @@ class BooksController < ApplicationController
     end
 
     def correct_user
-      
       redirect_to books_path, notice: "Not authorized to edit this book" unless @book.user == current_user
     end
 
