@@ -3,6 +3,7 @@
 <table>
   <thead>
     <tr>
+      <th>Image</th>
       <th>Description</th>
       <th>User</th>
       <th></th>
@@ -13,6 +14,7 @@
   <tbody>
     <% @books.each do |book| %>
       <tr>
+        <td><%= image_tag book.image.url(:medium) %></td>
         <td><%= book.description %></td>
         <td><%= book.user.email if book.user %></td>
         <td><%= link_to 'Show', book %></td>
