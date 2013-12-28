@@ -2,7 +2,7 @@ Bookclub::Application.routes.draw do
   resources :books
 
   devise_for :users
-  root "pages#home"
+  root "books#index"
   get "discover" => "pages#discover"
   get "about" => "pages#about"
   # The priority is based upon order of creation: first created -> highest priority.
