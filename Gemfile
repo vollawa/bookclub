@@ -33,6 +33,8 @@ gem 'cocaine', '~> 0.5.3'
 gem 'paperclip', '~> 3.0'
 gem 'aws-sdk', '~> 1.31.3'
 gem 'masonry-rails', '~> 0.2.1'
+gem 'will_paginate', '~> 3.0'
+gem 'will_paginate-bootstrap', '~> 1.0'
 
 group :development, :test do
 	# Use sqlite3 as the database for Active Record
